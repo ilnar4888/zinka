@@ -1,5 +1,5 @@
 - sliders.each do |slider|
   .index_all_sliders
     = image_tag attachment_url(slider, :slider_image)
-    = link_to "Удалить", slider_path(slider), data: { confirm: 'Заебала уже, удалить хочешь? Ну давай нажми на ок))' }, method: :delete 
+    = link_to "Удалить", slider_path(slider), data: { confirm: 'Если тебе необходимо удаленные изображения складывать в корзину, напомни мне! Но сейчас он удалит их безвозвратно.' }, method: :delete 
   br

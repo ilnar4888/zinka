@@ -48,6 +48,7 @@ gem "seedbank"
 gem "stackprof"
 gem "refile", github: "refile/refile", require: ["refile/rails", "refile/simple_form"]
 gem "refile-mini_magick"
+gem "jquery-slick-rails"
 
 group :staging, :production do
   gem "newrelic_rpm"

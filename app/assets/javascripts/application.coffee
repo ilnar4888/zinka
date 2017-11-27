@@ -6,6 +6,7 @@
 #
 #= require jquery2
 #= require jquery-ujs
+#= require jquery.slick
 #= require foundation
 #= require current_user
 #= require_tree ../templates
