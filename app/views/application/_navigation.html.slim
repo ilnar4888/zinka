@@ -1,9 +1,12 @@
-ul.vertical 
-  - if user_signed_in?
-    li.active = active_link_to "Home", root_path, active: :exclusive, wrap_tag: :li
-    li.active = active_link_to "New slider", new_slider_path, active: :exclusive, wrap_tag: :li
-    li.active = link_to "Edit profile", edit_user_registration_path
-    li.active = link_to "Sign out", destroy_user_session_path
-  - else
-    li.active = active_link_to "Sign in", new_user_session_path, active: :exclusive, wrap_tag: :li
-    li.active = active_link_to "Sign up", new_user_registration_path, active: :exclusive, wrap_tag: :li
+.off-canvas-wrapper
+  #offCanvas.off-canvas.position-left[data-off-canvas]
+    = "ilnar"
+  .off-canvas-content[data-off-canvas-content] 
+    - if user_signed_in?
+        = active_link_to "Home", root_path, active: :exclusive, wrap_tag: :li
+        = active_link_to "New slider", new_slider_path, active: :exclusive, wrap_tag: :li
+        = link_to "Edit profile", edit_user_registration_path
+        = link_to "Sign out", destroy_user_session_path
+    - else
+        = active_link_to "Sign in", new_user_session_path, active: :exclusive, wrap_tag: :li
+        = active_link_to "Sign up", new_user_registration_path, active: :exclusive, wrap_tag: :li
