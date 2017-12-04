@@ -2,13 +2,14 @@ $(document).ready(function(){
   $("#slider").slick({
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 4000,
     fade: true,
     arrows: false,
     cssEase: 'ease',
     autoplay: true,
     adaptiveHeight: false,
-    autoplaySpeed: 3000,
-    variableWidth: false
+    autoplaySpeed: 6000,
+    variableWidth: false,
+    focusOnSelect: true
   });
 });

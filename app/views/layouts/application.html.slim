@@ -17,10 +17,13 @@ html class="no-js" lang="en"
     == analytics_init if GoogleAnalytics.valid_tracker?
 
   body
-    = render "navigation"
-    = render "messages"
-    = yield     
-    javascript:
-      App.currentUserData = #{{current_user.to_json}};
+    .expanded.collapse.row
+      .large-3.medium-3.columns
+        = render "navigation"
+      .large-9.medium-9.columns
+        = render "messages"
+        = yield     
+  javascript:
+    App.currentUserData = #{{current_user.to_json}};
 
-    = javascript_include_tag :application
+  = javascript_include_tag :application
