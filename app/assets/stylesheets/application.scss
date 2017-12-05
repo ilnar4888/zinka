@@ -13,8 +13,11 @@
 body {
   background: #363638;
   background-size: cover;
-  height: 400px;
-  overflow: hidden;
+}
+.block {
+  border-radius: 4px;
+  background-color:#2199e8;
+  margin: 6px;
 }
 
 .index_all_sliders {
@@ -61,15 +64,11 @@ body {
 #slider {
   overflow:hidden;
 }
-
-.slick-slide {
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -webkit-transition: all 1s ease-out;  
+.slick-slide img {
+  transform: scale(1);
+  transition: transform 7s;
+}
+.slick-current img {
+  transform: scale(1.1);
 }
 
-.slick-slide.slick-active {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}

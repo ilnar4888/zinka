@@ -22,8 +22,8 @@ html class="no-js" lang="en"
         = render "navigation"
       .large-9.medium-9.columns
         = render "messages"
-        = yield     
-  javascript:
-    App.currentUserData = #{{current_user.to_json}};
+        = yield
+    javascript:
+      App.currentUserData = #{{current_user.to_json}};
 
-  = javascript_include_tag :application
+    = javascript_include_tag :application
