@@ -50,6 +50,7 @@ gem "refile", github: "refile/refile", require: ["refile/rails", "refile/simple_
 gem "refile-mini_magick"
 gem "jquery-slick-rails"
 gem "geocoder"
+gem "gmaps4rails"
 
 group :staging, :production do
   gem "newrelic_rpm"

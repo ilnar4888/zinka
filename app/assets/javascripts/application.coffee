@@ -10,6 +10,8 @@
 #= require foundation
 #= require current_user
 #= require_tree ../templates
+#= require underscore
+#= require gmaps/google
 #= require_tree .
 
 $(document).foundation()
