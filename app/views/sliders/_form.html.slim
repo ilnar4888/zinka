@@ -1,4 +1,5 @@
 .block
+    h3 = "Создание картинок для основной страницы:"
 	= simple_form_for slider do |f|
-	  = f.input :slider_image, as: :attachment, direct: true, presigned: true, label: "Выберите изображение для слайдера рабочего стола. Размеры 1280/890 и желательно формат jpg", required: false
+	  = f.input :slider_image, as: :attachment, direct: true, presigned: true, label: "Выберите изображение для слайдера рабочего стола. Размеры не меньше 1280/890 и желательно формат jpg", required: false
 	  = f.button :submit

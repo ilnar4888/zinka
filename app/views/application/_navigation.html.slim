@@ -1,8 +1,8 @@
 ul.vertical.menu
   - if user_signed_in?
     li = link_to "Главная", root_path, active: :exclusive, wrap_tag: :li
-    li = link_to "Настройка", sliders_path, active: :exclusive, wrap_tag: :li
-    li = link_to "Изменить профиль", edit_user_registration_path
+    li = link_to "Настройка", settings_path, active: :exclusive, wrap_tag: :li
+    li = link_to "Добавить отзыв"    
     li = link_to "Выход", destroy_user_session_path
   - else
     li = link_to "Выход", new_user_session_path, active: :exclusive, wrap_tag: :li

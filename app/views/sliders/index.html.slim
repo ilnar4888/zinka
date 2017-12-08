@@ -1,8 +1,9 @@
-=render "maps/form"
-=render "form"
 .index_all_sliders
   - sliders.each do |slider|
     = image_tag attachment_url(slider, :slider_image)
     = link_to "Удалить", slider_path(slider), data: { confirm: 'Если тебе необходимо удаленные изображения складывать в корзину, напомни мне! Но сейчас он удалит их безвозвратно.' }, method: :delete 
     br
     br
+=render "form"
+=render "works/form"
+=render "maps/form"

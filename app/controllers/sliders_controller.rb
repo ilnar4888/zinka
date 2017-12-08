@@ -6,9 +6,6 @@ class SlidersController < ApplicationController
   def index
   end
 
-  def new
-  end
-
   def create
   	slider.save!
   	respond_with :sliders

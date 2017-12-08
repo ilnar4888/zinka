@@ -1,0 +1,8 @@
+.block
+  h3 = "Создание работы:"
+  = simple_form_for Work.new, url: works_path do |f|
+    = f.input :title, required: false, label: false, placeholder: "Выполняемая работа." 
+    = f.input :description, required: false, label: false, placeholder: "Описание работы." 
+    = f.input :price, required: false, label: false, placeholder: "Стоимость работы, можно не указать!" 
+    = f.input :images_files, as: :attachment, direct: true, miltiple: true, presigned: true, label: "Изображение ваших работ!"
+    = f.button :submit
