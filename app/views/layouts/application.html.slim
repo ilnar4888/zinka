@@ -9,13 +9,14 @@ html class="no-js" lang="en"
 
     = display_meta_tags site: "RailsBase", keywords: %w(title site)
     = csrf_meta_tags
+    link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet"
     = stylesheet_link_tag :application
 
     = javascript_tag "window.App = {}"
 
     == analytics_init if GoogleAnalytics.valid_tracker?
 
-  body
+  body#bgCanvas
     script(src="//maps.google.com/maps/api/js?key=AIzaSyBmPIb7F97XBi3uXIDlOeY548dBI7Vfm6A")
     script(src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js")
     script(src="//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js" type="text/javascript")
@@ -23,6 +24,7 @@ html class="no-js" lang="en"
     = yield
     javascript:
       App.currentUserData = #{{current_user.to_json}};
+    
     = javascript_include_tag :application
 
 

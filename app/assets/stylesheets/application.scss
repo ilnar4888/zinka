@@ -3,29 +3,21 @@
 @import "slick";
 @import "slick-theme";
 
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(http://fonts.gstatic.com/s/raleway/v12/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
 body {
-  background: #363638;
-  background-size: cover;
+  background-color:#011627;
 }
 .block {
   border-radius: 4px;
-  background-color:#2199e8;
+  background-color:#2EC4B6;
   margin: 6px;
 }
 
 .index_all_sliders {
   img {
 	  padding:2px;
-    border:3px solid #2199e8;
+    border:3px solid #E71D36;
     border-radius: 25px;
-    background-color:#2199e8;
+    background-color:#FDFFFC;
     margin-right: 10px;
     width: 40%;
     line-height: 1px;
@@ -41,20 +33,21 @@ body {
 
 #map {
   width: auto;
-  height: 200px;
+  height: 150px;
 }
 
 .menu a {
-  color: #ddd;
+  color: #FF9F1C;
   display: block;
   text-decoration: none;
+  font-family: 'Vollkorn SC', serif;
   text-transform: uppercase;
   width:100;
   font-size: 23px;
 }
 
 .menu li {
-  box-shadow: 6px 0 rgba(255, 255, 255,.2) inset;
+  box-shadow: 6px 0 rgba(225, 225, 225, .2) inset1;
   padding-left: 1em;
   margin-bottom: 5px;
   --webkit-transition: all .5s;
@@ -63,11 +56,12 @@ body {
 }
 
 .menu li:hover{
-  box-shadow: 20em 0 rgba(255, 255, 255,.2) inset;
+  box-shadow: 20em 0 rgba(225, 225, 225, .2) inset;
 }
 
 #slider {
   overflow:hidden;
+  margin-bottom: none;
 }
 .slick-slide img {
   transform: scale(1);
