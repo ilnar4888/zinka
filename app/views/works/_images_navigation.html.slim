@@ -1,0 +1,6 @@
+- image = Image.includes(:work).all
+.post
+	- image.each do |image|
+		= image_tag attachment_url(image, :file, :fill, 600, 400, format: "jpg")
+		.post-s
+		  h2 = image.work.title

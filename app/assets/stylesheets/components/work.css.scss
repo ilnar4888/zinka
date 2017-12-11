@@ -1,0 +1,33 @@
+.post {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  cursor: pointer;
+}
+.post:hover .post-s {
+  width: 600px;
+}
+
+.post-img {
+  display: block;	
+  width: 600px;
+  height: 400px;
+}
+.post-s{
+  position: absolute;
+  width: 0px;
+  height: 400px;
+  background: white;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.7s ease;
+}
+.post-s h2 {
+  color: blue;
+  font-size: 50px;
+  border: 6px solid white;
+  padding: 10px;
+}

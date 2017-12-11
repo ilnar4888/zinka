@@ -6,8 +6,9 @@
         = image_tag attachment_url(slider, :slider_image, :fill, 1280, 890, format: "jpg")
   .large-3.medium-3.columns
     = render "application/navigation"
-.row.expanded.collapse 
-  #map
+.row
+  = render "works/images_navigation"
+
 javascript:
   var mapOptions = {
     disableDefaultUI: true,
