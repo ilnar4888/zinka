@@ -1,22 +1,22 @@
 .post {
   position: relative;
-  width: 600px;
-  height: 400px;
+  width: 300px;
+  height: 200px;
   cursor: pointer;
 }
 .post:hover .post-s {
-  width: 600px;
+  width: 300px;
 }
 
 .post-img {
   display: block;	
-  width: 600px;
-  height: 400px;
+  width: 300px;
+  height: 200px;
 }
 .post-s{
   position: absolute;
   width: 0px;
-  height: 400px;
+  height: 200px;
   background: white;
   top: 0;
   display: flex;

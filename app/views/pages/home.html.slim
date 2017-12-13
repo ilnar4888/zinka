@@ -1,10 +1,10 @@
 .expanded.collapse.row
-  .large-9.medium-9.columns
+  .large-9.medium-9.small-9.columns
     = render "application/messages"
     #slider
       - sliders.each do |slider|
         = image_tag attachment_url(slider, :slider_image, :fill, 1280, 890, format: "jpg")
-  .large-3.medium-3.columns
+  .large-3.medium-3.small-3.columns
     = render "application/navigation"
 .row
   = render "works/images_navigation"
