@@ -1,4 +1,5 @@
 .block
+  i.fa.fa-address-book[aria-hidden="true"]
   h3 = "Создание работы:"
   = simple_form_for Work.new, url: works_path do |f|
     = f.input :title, required: false, label: false, placeholder: "Выполняемая работа." 

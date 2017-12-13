@@ -51,6 +51,7 @@ gem "refile-mini_magick"
 gem "jquery-slick-rails"
 gem "geocoder"
 gem "gmaps4rails"
+gem "font-awesome-sass"
 
 group :staging, :production do
   gem "newrelic_rpm"

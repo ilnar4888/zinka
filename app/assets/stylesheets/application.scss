@@ -2,9 +2,11 @@
 @import "components/all";
 @import "slick";
 @import "slick-theme";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 body {
-  background-color:#011627;
+  background-color:#FDFFFC;
 }
 .block {
   border-radius: 4px;
@@ -37,7 +39,7 @@ body {
 }
 
 .menu a {
-  color: #FF9F1C;
+  color: #011627;
   display: block;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
@@ -68,4 +70,9 @@ body {
 }
 .slick-current img {
   transform: scale(1.1);
+}
+.footer {
+  background-color: #011627;
+  width: 500px;
+  height: 500px;
 }
