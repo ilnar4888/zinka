@@ -26,51 +26,12 @@ body {
   }
 }
 
-.menu {
-  list-style: none;
-  line-height: 42px;
-  padding-left: 0;
-  width: 20em;
-}
-
 #map {
   width: auto;
   height: 150px;
 }
 
-.menu a {
-  color: #011627;
-  display: block;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-  width:100;
-  font-size: 23px;
-}
 
-.menu li {
-  box-shadow: 6px 0 rgba(225, 225, 225, .2) inset1;
-  padding-left: 1em;
-  margin-bottom: 5px;
-  --webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-}
-
-.menu li:hover{
-  box-shadow: 20em 0 rgba(225, 225, 225, .2) inset;
-}
-
-#slider {
-  overflow:hidden;
-  margin-bottom: none;
-}
-.slick-slide img {
-  transform: scale(1);
-  transition: transform 7s;
-}
-.slick-current img {
-  transform: scale(1.1);
-}
 .footer {
   background-color: #011627;
   width: 500px;
