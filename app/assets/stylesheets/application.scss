@@ -6,8 +6,15 @@
 @import "font-awesome";
 
 body {
-  background-color:#FDFFFC;
+  background: #FDFFFC;
+  color: #011627;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 190%;
+  text-align: center;
+  text-transform: uppercase; 
+  margin: 0 auto;
 }
+
 .block {
   border-radius: 4px;
   background-color:#2EC4B6;

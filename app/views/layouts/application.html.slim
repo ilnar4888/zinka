@@ -21,11 +21,10 @@ html class="no-js" lang="en"
 	script(src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js")
 	script(src="//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js" type="text/javascript")
 	= javascript_include_tag :application
+	= render "application/navigation"
 	= yield
 	= render "application/footer"
 	javascript:
 	  App.currentUserData = #{{current_user.to_json}};
 	
 	= javascript_include_tag :application
-
-

@@ -1,12 +1,44 @@
-.expanded.collapse.row
-  .large-9.medium-9.columns
-    = render "application/messages"
-    #slider
-      - sliders.each do |slider|
-        = image_tag attachment_url(slider, :slider_image, :fill, 1280, 890, format: "jpg")
-  .large-3.medium-3.columns
-    = render "application/navigation"
-.row
+= render "application/messages"
+#slider
+  - sliders.each do |slider|
+    = image_tag attachment_url(slider, :slider_image, :fill, 1280, 890)
+.clearfix
+#inner-wrapper
+  section.one-third
+    .circle
+      td
+        i.fa.fa-users
+    h3 Работы
+    p В статье описаны продвинутые функций OpenSSH, которые позволяют сильно упростить жизнь системным администраторам и программистам, которые не боятся шелла. В отличие от большинства руководств, которые кроме ключей и -L/D/R опций ничего не описывают, я попытался собрать все интересные фичи и удобства, которые с собой несёт ssh.        
+  section.one-third
+    .circle
+      td
+        i.fa.fa-map-marker
+    h3 Наши новости
+    p В статье описаны продвинутые функций OpenSSH, которые позволяют сильно упростить жизнь системным администраторам и программистам, которые не боятся шелла. В отличие от большинства руководств, которые кроме ключей и -L/D/R опций ничего не описывают, я попытался собрать все интересные фичи и удобства, которые с собой несёт ssh.        
+section.one-third
+      .circle
+        td
+          i.fa.fa-check-square-o
+      h3 Отзывы о нас
+      p В статье описаны продвинутые функций OpenSSH, которые позволяют сильно упростить жизнь системным администраторам и программистам, которые не боятся шелла. В отличие от большинства руководств, которые кроме ключей и -L/D/R опций ничего не описывают, я попытался собрать все интересные фичи и удобства, которые с собой несёт ssh.        
+.clearfix
+  article
+    = link_to image_tag("1.png"), "http://www.flatstack.com", class: "circle-image"
+  aside
+    h3 Our Facility
+    br
+    ul.gym
+      li
+        h4 Какой либо текст
+      li
+        h4 Какой либо текст
+      li
+        h4 Какой либо текст
+      li
+        h4 Какой либо текст  
+.clearfix
+section.one-third
   = render "works/images_navigation"
 
 javascript:

@@ -1,0 +1,64 @@
+#slider {
+  padding-top: 89px;
+}
+#inner-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.one-third {
+	width: 29%;
+  float: left;
+  margin: 2%;
+}
+.circle {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  background: #011627;
+  border-radius: 50%;
+}
+.one-third i{
+  color: #FDFFFC;
+  font-size: 555%;
+  padding: 20%;
+}
+
+p {
+  text-align: justify;
+  text-transform: none;
+  font-size: 125%;
+  padding: 5%;
+}
+
+.clearfix {
+  clear: both;
+  padding: 2%;
+}
+
+article {
+  float: left;
+  width: 50%;
+  padding: 4%;
+}
+
+.circle-image img{
+  border-radius: 70%;
+}
+
+aside {
+  float: right;
+  width: 35%;
+  padding: 2%;
+}
+
+aside h3 {
+  text-decoration: underline;
+}
+
+aside ul li {
+  list-style-type: none;
+}
+
+.one-third img {
+  padding-bottom: 2%;
+}
