@@ -2,6 +2,7 @@ footer {
   background: #011627; 
   overflow: hidden;
 }
+
 #footer-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -19,7 +20,6 @@ footer .one-third p {
 
 footer h3 {
 	color: #FDFFFC;
-  font-size: 3vw;
 }
 
 footer p {
@@ -72,13 +72,14 @@ h5 a:hover{
 }
 
 #footer-third-last a {
-  font-size: 1.5vw;
   color: #FDFFFC;
   padding: 2%;
 }
+
 #footer-third-last a:hover {
   color: #2EC4B6;
 }
+
 #footer-third-last .one a {
   padding: 2%;
 }

@@ -22,7 +22,7 @@
   	right: 28px;
   	top: 65px;
   	font-size: 20px;
-  	border: 1px solid #2EC4B6;
+  	border: 1px solid  ;
   	border-radius: 4px 0 4px 4px;
   }
   .navigation li {
@@ -50,5 +50,29 @@
   }
   h4 {
   	font-size: 140%;
+  }
+  footer .one-third {
+    width: 100%;
+    margin: 0;
+  }
+  .social i {
+    font-size: 245%;
+  }
+  #footer-third {
+    min-height: 150px;
+    padding-bottom: 10%;
+  }
+  #footer-third-center {
+    border-top: 1px solid #2EC4B6;
+    border-bottom: 1px solid #2EC4B6;
+  }
+}
+@media screen and (max-width: 478px) {
+  h3 {
+    font-size: 150%;
+  }
+  p {
+    font-size: 100%;
+    margin: 2%;
   }
 }
