@@ -67,5 +67,14 @@ header {
 
 .navigation #menu-icon {
   color: #FF9F1C;
-  display: none;
+  display: hidden;
+}
+.navigation #menu-icon .fa.fa-bars {
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  font-size: 50px;
+  margin-top: 29px;
+  right: 20px;
+  padding-top: 0;
 }
