@@ -1,8 +1,6 @@
-- image = Image.includes(:work).last(6)
+- image = Image.includes(:work).last(3)
 - image.each do |image|
-  .large-4.medium-4.small-6.columns
-	  .post 
-		  = image_tag attachment_url(image, :file, :fill, 300, 200, format: "jpg")
-		  .post-s
-		    h2 = image.work.title
-	  br	    
+  section.one-third
+    h3 = image.work.title
+    = image_tag attachment_url(image, :file, :fill, 300, 200, format: "jpg")
+    p = image.work.description
