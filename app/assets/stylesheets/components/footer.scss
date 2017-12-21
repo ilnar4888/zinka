@@ -1,6 +1,7 @@
 footer {
   background: #011627; 
   overflow: hidden;
+  margin: 0;
 }
 
 #footer-inner {
@@ -73,7 +74,9 @@ h5 a:hover{
 
 #footer-third-last a {
   color: #FDFFFC;
+  font-size: 125%;
   padding: 2%;
+  font-family: 'Pacifico', cursive;
 }
 
 #footer-third-last a:hover {

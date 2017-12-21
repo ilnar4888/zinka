@@ -13,7 +13,7 @@ class SlidersController < ApplicationController
 
   def destroy
   	slider.destroy
-  	respond_with :sliders
+  	redirect_to settings_path
   end
 
   private

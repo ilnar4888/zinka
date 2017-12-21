@@ -1,3 +1,8 @@
+br
+br
+br
+br
+h2 Изображения на слайдере основной страницы
 .index_all_sliders
   - sliders.each do |slider|
     = image_tag attachment_url(slider, :slider_image)
@@ -5,5 +10,9 @@
     br
     br
 =render "form"
+br
+br
 =render "works/form"
+br
+br
 =render "maps/form"

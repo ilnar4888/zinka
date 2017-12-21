@@ -1,5 +1,8 @@
 #slider {
-  padding-top: 89px;
+  padding-top: 50px;
+  height: 100vh;
+  vertical-align: middle;
+  text-align: center;
 }
 #inner-wrapper {
   max-width: 1200px;
@@ -28,11 +31,11 @@ p {
   text-transform: none;
   font-size: 125%;
   padding: 5%;
+  font-family: 'Pacifico', cursive;
 }
 
 .clearfix {
   clear: both;
-  padding: 2%;
 }
 
 article {
@@ -48,7 +51,6 @@ article {
 aside {
   float: right;
   width: 35%;
-  padding: 2%;
 }
 
 aside h3 {
@@ -57,6 +59,11 @@ aside h3 {
 
 aside ul li {
   list-style-type: none;
+  padding: 0;
+}
+
+aside ul {
+  margin: 0;
 }
 
 .one-third img {

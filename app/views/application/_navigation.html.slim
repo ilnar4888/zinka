@@ -12,5 +12,9 @@ header
           li = link_to "Отзывы"    
           li = link_to "Выход", destroy_user_session_path
         - else
-          li = link_to "Выход", new_user_session_path, active: :exclusive, wrap_tag: :li
-          li = link_to "Вход", new_user_registration_path, active: :exclusive, wrap_tag: :li
+          li = link_to "Главная", root_path, active: :exclusive, wrap_tag: :li
+          li = link_to "Прайс", "#"
+          li = link_to "Достижения", "#"
+          li = link_to "Новости", "#"
+          li = link_to "Отзывы", "#"
+          li = link_to "Примеры", "#"

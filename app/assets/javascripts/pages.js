@@ -5,7 +5,6 @@ $("#slider").slick({
   fade: true,
   arrows: false,
   autoplay: true,
-  pauseOnFocus: true,
   autoplaySpeed: 8000,
   variableWidth: false,
   centerMode: true

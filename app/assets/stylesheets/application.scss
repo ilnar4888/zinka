@@ -26,7 +26,7 @@ body {
 	  padding:2px;
     border:3px solid #E71D36;
     border-radius: 25px;
-    background-color:#FDFFFC;
+    background-color: #FDFFFC;
     margin-right: 10px;
     width: 40%;
     line-height: 1px;
@@ -34,8 +34,9 @@ body {
 }
 
 #map {
+  border-top: 1px solid #2EC4B6;
   width: auto;
-  height: 150px;
+  height: 200px;
 }
 
 
