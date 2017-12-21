@@ -1,35 +1,36 @@
 .clearfix
-footer
-  #footer-inner
-    section.one-third#footer-third
-      h3 Контакты
-      br
-      p  Yelabuga, Pinegina - 94
-      p  8 937 593 4888
-    section.one-third#footer-third-center
-      h3 В сетях
-      br
-      ul.social
-        li
-          a href="https://www.vk.com"
-            i.fa.fa-vk  
-        li
-          a href="https://www.plus.google.com/+DrewRyan_w3/posts"
-            i.fa.fa-google-plus
-        li
-          a href="https://www.youtube.com/user.drewoncue"
-            i.fa.fa-youtube
-    section.one-third#footer-third-last
-      h3 Страницы
-      br
-      - if user_signed_in?
-        .one 
-          = link_to "Главная", root_path
-        = link_to "Настройка", settings_path
-        = link_to "Отзывы", root_path    
-        = link_to "Выход", destroy_user_session_path
-      - else
-        = link_to "Выход", new_user_session_path
-        = link_to "Вход", new_user_registration_path
-footer.second
-  p &copy; Logotip, 2017. 
+section.os-animation[data-os-animation="zoomInDown" data-os-animation-delay=".3s"]
+  footer
+    #footer-inner
+      section.one-third#footer-third
+        h3 Контакты
+        br
+        p  Yelabuga, Pinegina - 94
+        p  8 937 593 4888
+      section.one-third#footer-third-center
+        h3 В сетях
+        br
+        ul.social
+          li
+            a href="https://www.vk.com"
+              i.fa.fa-vk  
+          li
+            a href="https://www.plus.google.com/+DrewRyan_w3/posts"
+              i.fa.fa-google-plus
+          li
+            a href="https://www.youtube.com/user.drewoncue"
+              i.fa.fa-youtube
+      section.one-third#footer-third-last
+        h3 Страницы
+        br
+        - if user_signed_in?
+          .one 
+            = link_to "Главная", root_path
+          = link_to "Настройка", settings_path
+          = link_to "Отзывы", root_path    
+          = link_to "Выход", destroy_user_session_path
+        - else
+          = link_to "Выход", new_user_session_path
+          = link_to "Вход", new_user_registration_path
+  footer.second
+    p &copy; Logotip, 2017. 
