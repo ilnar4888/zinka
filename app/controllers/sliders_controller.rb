@@ -8,7 +8,7 @@ class SlidersController < ApplicationController
 
   def create
   	slider.save!
-  	respond_with :sliders
+  	redirect_to settings_path
   end
 
   def destroy

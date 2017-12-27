@@ -52,6 +52,8 @@ gem "jquery-slick-rails"
 gem "geocoder"
 gem "gmaps4rails"
 gem "font-awesome-sass"
+gem "refile-s3"
+gem "figaro"
 
 group :staging, :production do
   gem "newrelic_rpm"

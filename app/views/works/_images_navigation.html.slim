@@ -4,5 +4,5 @@ section.staggered-animation-container
 	- image.each do |image|
 	    section.one-third
 	      h3 = image.work.title
-	      = image_tag attachment_url(image, :file, :fill, 300, 300, format: "jpg")
+	      = image_tag attachment_url(image, :file, :fill, 300, 300, format: "jpg"), class: "border_image"
 	      p = image.work.description

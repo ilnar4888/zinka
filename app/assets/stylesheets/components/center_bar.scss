@@ -1,7 +1,6 @@
 #slider {
-  padding-top: 50px;
-  height: 100vh;
   vertical-align: middle;
+  margin-top: 58px;
   text-align: center;
 }
 #inner-wrapper {
@@ -44,6 +43,10 @@ article {
   padding: 4%;
 }
 
+.border_image {
+  border-radius: 10%;
+}
+
 .circle-image img{
   border-radius: 50%;
 }
@@ -55,15 +58,13 @@ aside {
 
 aside h3 {
   text-decoration: underline;
-}
-
-aside ul li {
-  list-style-type: none;
-  padding: 0;
-}
-
-aside ul {
-  margin: 0;
+  text-align: justify;
+  text-transform: none;
+  font-size: 200%;
+  padding: 5%;
+  padding-bottom: 0;
+  padding-left: 25%;
+  font-family: 'Pacifico', cursive;
 }
 
 .one-third img {

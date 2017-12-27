@@ -32,12 +32,11 @@
               = link_to "Выход", destroy_user_session_path
             - else
               = link_to "Главная", root_path, active: :exclusive, wrap_tag: :li
-              = link_to "Прайс", "#"
               = link_to "Достижения", "#"
               br
               = link_to "Новости", "#"
+              = link_to "Прайс", "#"
               = link_to "Отзывы", "#"
-              = link_to "Примеры", "#"
       #map
       footer.second
         p &copy; Logotip, 2017.
