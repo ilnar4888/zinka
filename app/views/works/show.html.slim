@@ -1,0 +1,9 @@
+br
+br
+.circle-image-show
+  = image_tag attachment_url(work.images.last, :file, :fill, 1000, 500, format: "jpg")
+.circle-text
+  h3 = work.title
+  p = work.description
+  - if user_signed_in?
+    p = link_to "Редактировать", edit_work_path(work)

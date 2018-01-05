@@ -8,12 +8,13 @@ header
       ul
         - if user_signed_in?
           li.current = link_to "Главная", root_path, active: :exclusive, wrap_tag: :li
+          li = link_to "Команда", our_team_path
+          li = link_to "Работы", works_path
+          li = link_to "Отзывы", "#"
           li = link_to "Настройка", settings_path, active: :exclusive, wrap_tag: :li
-          li = link_to "Отзывы"    
           li = link_to "Выход", destroy_user_session_path
         - else
           li = link_to "Главная", root_path, active: :exclusive, wrap_tag: :li
-          li = link_to "Достижения", "#"
-          li = link_to "Новости", "#"
-          li = link_to "Прайс", "#"
+          li = link_to "Команда", our_team_path
+          li = link_to "Работы", works_path
           li = link_to "Отзывы", "#"

@@ -17,9 +17,16 @@ body {
 
 .block {
   border-radius: 4px;
-  background-color:#2EC4B6;
+  background-color: #FF9F1C;
   margin: 6px;
 }
+
+.form {
+  width: 900px; /* Ширина элемента в пикселах */
+  padding: 10px; /* Поля вокруг текста */
+  margin: auto;  
+}
+
 
 .index_all_sliders {
   img {
@@ -30,6 +37,7 @@ body {
     margin-right: 10px;
     width: 40%;
     line-height: 1px;
+    margin-top: 20px;
   }
 }
 
@@ -44,4 +52,12 @@ body {
   background-color: #011627;
   width: 500px;
   height: 500px;
+}
+
+.slick-slide img {
+  transform: scale(1);
+  transition: transform 7s;
+}
+.slick-current img {
+  transform: scale(1.1);
 }

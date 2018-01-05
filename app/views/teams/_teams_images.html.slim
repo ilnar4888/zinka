@@ -1,0 +1,9 @@
+- team = Team.last
+section.os-animation[data-os-animation="fadeInLeft" data-os-animation-delay=".3s"]
+  article
+    .circle-image
+      = link_to image_tag(attachment_url(team, :team_image, :fill, 800, 550, format: "jpg")), team
+section.os-animation[data-os-animation="fadeInRight" data-os-animation-delay=".1s"]
+  aside
+    h3 = link_to "#{team.title}", team_path(team) 
+    p = team.description

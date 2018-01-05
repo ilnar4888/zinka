@@ -1,0 +1,11 @@
+br
+br
+br
+.block
+  h3 = "Редактирование команды:"
+  .form 
+	  = simple_form_for team do |f|
+	    = f.input :title, required: false, label: false, placeholder: "Заголовок команды" 
+	    = f.input :description, required: false, label: false, placeholder: "Описание комнады не более 30 слов" 
+	    = f.input :team_image, as: :attachment, direct: true, presigned: true, label: false, required: false
+		= f.button :submit

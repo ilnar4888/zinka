@@ -1,0 +1,11 @@
+br
+br
+- images = Image.includes(:work).all
+section.staggered-animation-container
+  section.os-animation[data-os-animation="zoomIn" data-os-animation-delay=".1s"]
+	- images.each do |image|
+	    section.one-third
+	      .border_image
+	        = link_to image_tag(attachment_url(image, :file, :fill, 300, 300, format: "jpg")), work_path(image.work)
+	      h3 = link_to "#{image.work.title}", work_path(image.work)
+	      p = link_to "#{image.work.description}", work_path(image.work)

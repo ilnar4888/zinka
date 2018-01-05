@@ -1,5 +1,14 @@
 .block
-    h3 = "Создание картинок для основной страницы:"
-	= simple_form_for slider do |f|
-	  = f.input :slider_image, as: :attachment, direct: true, presigned: true, label: "Выберите изображение для слайдера рабочего стола. Размеры не меньше 1280/890 и желательно формат jpg", required: false
-	  = f.button :submit
+  br
+  br
+  h2 Изображения на слайдере основной страницы
+  .index_all_sliders
+    ul
+    - sliders.each do |slider|
+      li 
+        = image_tag attachment_url(slider, :slider_image)
+        = link_to "Удалить", slider_path(slider), data: { confirm: 'Если тебе необходимо удаленные изображения складывать в корзину, напомни мне! Но сейчас он удалит их безвозвратно.' }, method: :delete 
+  .form
+	  = simple_form_for slider do |f|
+	    = f.input :slider_image, as: :attachment, direct: true, presigned: true, label: false 
+	    = f.button :submit

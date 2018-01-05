@@ -1,8 +1,9 @@
 .block	
   h3 = "Создание точки на карте:"
   br
-	= simple_form_for Map.new, url: maps_path do |f|
-      = f.input :address_name, required: false, label: false, placeholder: "Наберите название адреса, какой хотели бы видеть клиенты!" 
-      = f.input :address, required: false,  label: false, label: false, placeholder: "Наберите адрес для нахождения точки на карте. Пример: Kazan, Pushkina 46" 
-	  br
-	  = f.button :submit
+	.form
+		= simple_form_for Map.new, url: maps_path do |f|
+	      = f.input :address_name, required: false, label: false, placeholder: "Наберите название адреса, какой хотели бы видеть клиенты!" 
+	      = f.input :address, required: false,  label: false, label: false, placeholder: "Наберите адрес для нахождения точки на карте. Пример: Kazan, Pushkina 46" 
+		  br
+		  = f.button :submit

@@ -28,14 +28,6 @@
             i.fa.fa-commenting
         h3 Отзывы 
         p Сюда можно вывести красивый отзыв или последний отзыв. Можно реализовать одобрение админом до вывода отзыва на экран, редактирование, удаление и прочее.
-    .clearfix
-      section.os-animation[data-os-animation="fadeInLeft" data-os-animation-delay=".3s"]
-        article
-          = link_to image_tag("1.png"), "http://www.flatstack.com", class: "circle-image"
-      section.os-animation[data-os-animation="fadeInRight" data-os-animation-delay=".1s"]
-        aside
-          h3 Ваша команда
-          p Наша компания основана 1917 году и за время революций показала устойчивые показатели роста производства!  
-             
     .clearfix  
+      = render "teams/teams_images"
   = render "works/images_navigation"

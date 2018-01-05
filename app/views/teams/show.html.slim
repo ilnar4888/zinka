@@ -1,0 +1,9 @@
+br
+br
+.circle-image-show
+  = image_tag attachment_url(team, :team_image, :fill, 1000, 500, format: "jpg")
+.circle-text
+  h3 = team.title
+  p = team.description
+  - if user_signed_in?
+    p = link_to "Редактировать", edit_team_path(team)
