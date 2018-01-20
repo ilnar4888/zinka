@@ -57,18 +57,54 @@ article {
   margin-bottom: 1vw;
 }
 
+.border_images{  
+  border-radius: 10%;
+  border: 2px solid #011627; 
+  margin-bottom: 1vw;
+}
+
 .circle-image img{
   border-radius: 20px;
   border: 4px solid #011627;
 }
 
-.circle-image-show img{
-  border-radius: 10px;
-  border: 2px solid #011627;
-  margin-right: auto;
-  margin-left: auto;
-  width: 1005px;
+.main{
+  max-width: 1000px;
+  margin: auto;
 }
+
+.sl.slick-initialized.slick-slider{
+  margin-bottom: 5px;
+} 
+
+.sl2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.sl5 {
+  padding: 5px;
+}
+
+.sl5 img {
+  padding: 3px;
+  background: #FDFFFC;
+  border-radius: 3px;
+  border: 2px solid #2EC4B6;
+  cursor: pointer;
+  -webkit-transition: background .3s;
+  -o-transition: background .3s;
+  transition: background .3s;
+}
+
+.slick-current img {
+  background: #2EC4B6;
+}
+
+.sl5 img:hover{
+  background: #2EC4B6;
+}
+
 
 aside {
   float: right;
@@ -77,6 +113,7 @@ aside {
 }
 
 .circle-text {
+  margin-top: 0;
   margin-right: auto;
   width: 45%;
   margin-left: auto;
@@ -117,3 +154,4 @@ aside h3 a :hover {
 aside p {
   padding-top: 0;
 }
+

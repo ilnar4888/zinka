@@ -11,3 +11,4 @@ $("#slider").slick({
   variableWidth: false,
   centerMode: true
 });
+

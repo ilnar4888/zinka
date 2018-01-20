@@ -1,7 +1,13 @@
 br
 br
-.circle-image-show
-  = image_tag attachment_url(work.images.last, :file, :fill, 1000, 500, format: "jpg")
+.main
+  .sl
+    - work.images.each do |image|
+      = image_tag attachment_url(image, :file, :fill, 1000, 500, format: "jpg")
+  .sl2
+    - work.images.each do |image|
+      .sl5
+        = image_tag attachment_url(image, :file, :fill, 150, 100, format: "jpg")    
 .circle-text
   h3 = work.title
   p = work.description

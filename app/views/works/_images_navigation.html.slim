@@ -1,8 +1,9 @@
-- image = Image.includes(:work).last(3)
+- works = Work.includes(:images).last(3)
 section.staggered-animation-container
   section.os-animation[data-os-animation="zoomIn" data-os-animation-delay=".1s"]
-	- image.each do |image|
+	- works.each do |work|
 	    section.one-third
-	      = image_tag attachment_url(image, :file, :fill, 300, 300, format: "jpg"), class: "border_image"
-	      h3 = image.work.title
-	      p = image.work.description
+	      .border_image
+	        = link_to image_tag(attachment_url(work.images.first, :file, :fill, 300, 300, format: "jpg")), works_path
+	      h3 = work.title
+	      p = work.description

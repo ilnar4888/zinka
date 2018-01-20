@@ -5,5 +5,5 @@
 	    = f.input :title, required: false, label: false, placeholder: "Выполняемая работа." 
 	    = f.input :description, required: false, label: false, placeholder: "Описание работы." 
 	    = f.input :price, required: false, label: false, placeholder: "Стоимость работы, можно не указать!" 
-	    = f.input :images_files, multiple: true, as: :attachment, direct: true, label: false
+	    = f.input :images_files, multiple: :true, as: :attachment, direct: true, presigned: true
 	    = f.button :submit
