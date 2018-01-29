@@ -5,39 +5,30 @@
         #footer-inner
           section.one-third#footer-third
             h3 Контакты
-            br
-            p  Yelabuga, Pinegina - 94
-            p  8 937 593 4888
+            p  Kazan city
+            p  Marat Zinatullin +7 917 864-34-84
+            p  Ruslan Zamaletdinov +7 927 408-40-49
           section.one-third#footer-third-center
             h3 В сетях
             br
             ul.social
               li
-                a href="https://www.vk.com"
+                a href="https://vk.com/club145595670"
                   i.fa.fa-vk  
               li
-                a href="https://www.plus.google.com/+DrewRyan_w3/posts"
+                a href="https://vk.com/club145595670"
                   i.fa.fa-google-plus
               li
-                a href="https://www.youtube.com/user.drewoncue"
+                a href="https://vk.com/club145595670"
                   i.fa.fa-youtube
           section.one-third#footer-third-last
             h3 Страницы
+            = link_to "Главная", root_path, active: :exclusive, wrap_tag: :li
             br
-            - if user_signed_in?
-              .one 
-                = link_to "Главная", root_path
-              = link_to "Настройка", settings_path
-              = link_to "Отзывы", root_path    
-              = link_to "Выход", destroy_user_session_path
-            - else
-              = link_to "Главная", root_path, active: :exclusive, wrap_tag: :li
-              = link_to "Достижения", "#"
-              br
-              = link_to "Новости", "#"
-              = link_to "Прайс", "#"
-              = link_to "Отзывы", "#"
+            = link_to "Команда", our_team_path
+            = link_to "Игры", works_path
+            = link_to "Отзывы", "#"
       #map
       footer.second
-        p &copy; Logotip, 2017.
+        p &copy; FC ELF, #{Time.zone.today.year}.
        
