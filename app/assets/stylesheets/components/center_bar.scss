@@ -1,3 +1,12 @@
+#logo img {
+  float: left;
+  width: 85px;
+  height: 53px;
+  top: 4px;
+  margin-left: 12px;
+  margin-top: 2px;
+}
+
 p {
   text-align: justify;
   text-transform: none;
@@ -155,3 +164,19 @@ aside p {
   padding-top: 0;
 }
 
+section h3 {
+  margin-top: 7px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+section p {
+  margin-top: 0;
+  padding-top: 2px;
+}
+
+.block1 {
+  width: 1000px;
+  margin-right: auto; 
+  margin-left: auto; 
+}
